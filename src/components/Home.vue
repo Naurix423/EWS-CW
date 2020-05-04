@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>Trade or View your Storage</h1>
-        <h6>You may Save & Load your Data</h6>
-        <h6>Click on 'End Day' to begin a New Day!</h6>
+        <h1>Buy and Sell Valuable Items</h1>
+        <h4>You have 50k at your desposal use it to get rich</h4>
+        <h4>Click on next day to start a new day which will randomize item costs</h4>
         <hr>
         <p>Your Money: {{ money | currency }}</p>
     </div>
