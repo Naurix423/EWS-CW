@@ -2,18 +2,19 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <router-link to="/" class="navbar-brand " >Auction House</router-link>
+                <router-link to="/" class="navbar-brand">Stock Trader</router-link>
             </div>
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <router-link to="/storage" id="storage" activeClass="active" tag="li"><a>Owned Items</a></router-link>
-                    <router-link to="/items" activeClass="active" tag="li"><a>Items</a></router-link>
+                    <router-link to="/storage" activeClass="active" tag="li"><a>Portfolio</a></router-link>
+                    <router-link to="/items" activeClass="active" tag="li"><a>Stocks</a></router-link>
                     <router-link to="/about" activeClass="active" tag="li"><a>About</a></router-link>
+
                 </ul>
                 <strong class="navbar-text navbar-right">Money: {{ money | currency }}</strong>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" @click="endDay">Next Day</a></li>
+                    <li><a href="#" @click="endDay">End Day</a></li>
                     <li
                             class="dropdown"
                             :class="{open: isDropdownOpen}"
@@ -78,7 +79,7 @@
                 const data = {
                     money: this.$store.getters.money,
                     itemStorage: this.$store.getters.itemStorage,
-                    Items: this.$store.getters.Items
+                    items: this.$store.getters.items
                 };
                 this.$http.put('data.json', data);
             },

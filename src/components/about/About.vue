@@ -14,6 +14,8 @@
         VS code is the IDE used.
         <br>
         <a href="https://getbootstrap.com/">Bootstrap</a> is an open source toolkit for quick website development, they provide grid system, prebuilt components and many more
+        <br>
+        <a href="https://firebase.google.com/">Firebase</a> is the choice of database. They provide pain and free services.
         </h4>
     </div>
 </template>
